@@ -35,32 +35,6 @@ def counting_sort(lst):
             lst_pos += 1
     return lst
 
-#base-10
-# def radix_sort(lst):
-#     #find max length of number
-#     max = 0
-#     for idx in range(len(lst)):
-#         length = len(str(lst[idx]))
-#         if length > max:
-#             max = length
-
-#     #repeat for k number of times
-#     for i in range(max):
-#         #counting sort to compare
-#             #build count-array
-#         count_array = [[] for i in range(10)]
-#             #update count-array
-#         for item in lst:
-#             #extract digit
-#             digit = (item // (10**i)) % 10
-#             count_array[digit].append(item)
-#             #rebuild array as sorted
-#             tmp = []
-#         for i in range(len(count_array)):
-#             tmp += count_array[i]
-#         lst = tmp
-#     return lst
-
 def counting_sort(lst, exp):
     n = len(lst)
     output = [0] * n
@@ -91,27 +65,5 @@ def radix_sort(lst):
 
     return lst
 
-# Example usage:
-lst = [170, 45, 75, 90, 802, 24, 2, 66]
-sorted_lst = radix_sort(lst[:])
-print("Sorted list:", sorted_lst)
-
-def radix_10():
-    return
-
-def radix_2():
-    return
-
-def radix_32():
-    return
-
-def radix_left():
-    return
-
-def radix_right():
-    return
-
-# myList = [200, 151, 291, 981, 369, 421, 671]
-# x = radix_sort(myList[:])
-# print(myList)
-# print(x)
+string = "RDDDRDRRDR"
+print(predictPartyVictory(string))
